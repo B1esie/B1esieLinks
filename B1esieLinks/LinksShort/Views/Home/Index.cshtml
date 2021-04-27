@@ -1,0 +1,17 @@
+﻿<environment include="Development">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</environment>
+<div class="shortener-form-wrap">
+    <section class="shortener-form">
+        <h2>Введите строку для преобразования</h2>
+        <form method="post">
+            <input type="text" name="url" />
+            <input type="submit" value="Преобразовать" />
+        </form>
+        <div class="resp-area inactive" id="resp-area">
+        </div>
+    </section>
+    <h2>Короткая ссылка</h2>
+    <a href="@ViewData["Url"]">@ViewData["Url"]</a>
+</div>
